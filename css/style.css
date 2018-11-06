@@ -1,0 +1,126 @@
+html {
+    background: #19CE56;
+    background: -moz-linear-gradient(left, #19CE56 0%, #1C6EA4 100%, #2F38C5 100%);
+    background: -webkit-linear-gradient(left, #19CE56 0%, #1C6EA4 100%, #2F38C5 100%);
+    background: linear-gradient(to right, #19CE56 0%, #1C6EA4 100%, #2F38C5 100%);
+    color: white;
+    font-size: 2.2vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-top: 2vmax;
+}
+form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 425px;
+    max-height: 900px;
+    
+}
+input, textarea {
+    height: 6vmax;
+    font-size: 4vmax;
+    margin: 1vmax;
+    /* border : 1px solid black; */
+    border: none;
+}
+#choice {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vmax;
+    
+}
+
+
+.date {
+    display: inline-block;
+    height: 6vmax;
+    
+}
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
+}
+h1 {
+    font-size: 4vmax;
+    height: 4vmax;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+input[type='radio'] {
+    transform: scale(2.2);
+}
+
+textarea{
+    height: 35vmax;
+}
+#counter {
+    display: flex;
+    padding-left: 70%;
+}
+#send {
+    margin :2vmax;
+    margin-top: 3vmax;
+    margin-bottom: 2vmax;
+    border: none;
+    height: 5vmax;
+    font-size: 4vmax;
+    background-color: white;
+    color: black;
+}
+#alert {
+    background-color: none;
+    border: none;
+    color: red;
+    font-size: 4vmax;
+    background-color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 20px solid rgb(163, 25, 25);
+    width: 80%;
+    font-size: 3vmax;
+}
+
+.close {
+    color: #8b1010;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Vous êtes MINEUR !</p>
+        </div>
+        
+    </div>
+    <div id="master">
+        <form name="chrisForm">
+            
+            <input type="texte" name="name" placeholder="Nom">
+            
+            <input type="texte" name="forName" placeholder="Prénom" >
+            <div id="date">
+                <input type="date" id="birthday" name="birthday" value=""
+                min="1900-01-01" max="2018-12-31" required />
+                <span class="validity"></span>
+            </div>
+            
+            
+            <div id="choice">
+                <h1>Homme <input type="radio" name="gender" value="Homme"></h1> 
+                <h1>Femme <input type="radio"name="gender" value="Femme"></h1>
+            </div>
+            <input type="mail"  name="mail" id="mailText" placeholder="E-mail"><br>
+            
+            <em>Votre message.</em>
+            <textarea id="message" name="message" maxlength="255" >
+                
+
+
+            </textarea>
+            
+            <div id ="counter">
+                <div id="count">0</div>/255.</div><br>
+                <em> 255 caractères maximum.</em>
+                
+                
+                <div id="send" onclick="validateForm(); Javascript:checkEmail();">
+                    Envoyer
+                </div>
+                <div id="alert"></div>
+            </form>
+        </div>
+        
+        <script src="js/main.js"></script>
+    </body>
+    <footer>
+
+       
+
+    </footer>
+    </html>
